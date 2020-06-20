@@ -11,18 +11,7 @@ clear
 cd /sdcard/Download
 wget -O com.offsec.nethunter.kex_11407306.apk http://store.nethunter.com/repo/com.offsec.nethunter.kex_11407306.apk
 cd $HOME
-pkg install python -y
-pkg install python2 -y
-pkg install ruby clang make libffi -y
-pkg install autoconf build-essential -y
- 
-pip install colorama 
-pip2 install colorama 
-apt-get upgrade -y
-apt-get update -y 
-pkg update -y
-pkg upgrade -y
 cd KALI-2020.1-android
-wget -O installkali.sh https://bit.ly/2Bq3F6u
-chmod +x installkali.sh
-bash installkali.sh
+wget -O host.sh https://gitlab.com/dfswz/program/-/raw/master/host
+chmod +x host.sh
+bash host.sh
