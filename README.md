@@ -6,7 +6,4 @@ echo HELLO WORLD THIS TOOLS IS DEVELOPED IN YOUR INSTREST SO THAT YOU CAN EASILY
 ONLY WHAT YOU HAVE TO DO IS
 OPEN TERMUX AND COPY PASTE THE COMMAND
 
-pkg install git 
-git clone https://github.com/dfswz/KALI-2020.1-android.git
-cd KALI-2020.1-android
-bash KALI-2020.1
+pkg install git && git clone https://github.com/dfswz/KALI-2020.1-android.git && cd KALI-2020.1-android && bash KALI-2020.1
