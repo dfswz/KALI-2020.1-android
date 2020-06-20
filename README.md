@@ -9,4 +9,4 @@ OPEN TERMUX AND COPY PASTE THE COMMAND
 pkg install git 
 git clone https://github.com/dfswz/KALI-2020.1-android.git
 cd KALI-2020.1-android
-bash 
+bash KALI-2020.1
