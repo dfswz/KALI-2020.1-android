@@ -1,21 +1,25 @@
-pkg install wget 
-pkg install python
+pkg install wget -y
+pkg install python -y
 termux-setup-storage
 echo "THANK YOU FOR USING PLEASEE SUBSCRIBE US"
 python logo.py
 rm -rf logo.py
+
+
+
+clear
 wget -o /sdcard/Download/NETHUNTER KEX.apk https://store.nethunter.com/repo/com.offsec.nethunter.kex_11407306.apk
-pkg install python
-pkg install python2
-pkg install ruby clang make libffi
-pkg install autoconf build-essential
-gem install lolcat
-pip install colorama
-pip2 install colorama
-apt-get upgrade -y | lolcat
-apt-get update -y |lolcat
-pkg update -y | lolcat
-pkg upgrade |lolcat
+pkg install python -y
+pkg install python2 -y
+pkg install ruby clang make libffi -y
+pkg install autoconf build-essential -y
+gem install lolcat -y
+pip install colorama -y
+pip2 install colorama -y
+apt-get upgrade -y
+apt-get update -y 
+pkg update -y
+pkg upgrade -y
 #!/data/data/com.termux/files/usr/bin/bash -e
 
 VERSION=2020011601
@@ -420,16 +424,16 @@ if [[ ! -z $1 ]]; then
 fi
 
 cd $HOME
-print_banner |lolcat
-get_arch |lolcat
-set_strings |lolcat
-prepare_fs |lolcat
-check_dependencies |lolcat
+print_banner 
+get_arch 
+set_strings
+prepare_fs 
+check_dependencies
 get_rootfs
 get_sha 
 verify_sha
-extract_rootfs | lolcat
-create_launcher | lolcat
+extract_rootfs
+create_launcher
 cleanup
 
 printf "\n${blue}[*] Configuring NetHunter for Termux ...\n"
