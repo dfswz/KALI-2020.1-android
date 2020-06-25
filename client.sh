@@ -402,7 +402,7 @@ if [[ ! -z $1 ]]; then
 fi
 
 cd $HOME
-print_banner
+print_banner | lolcat
 get_arch
 set_strings
 prepare_fs
@@ -420,12 +420,12 @@ fix_sudo
 create_kex_launcher
 fix_uid
 
-print_banner
-printf "${green}[=] NetHunter for Termux installed successfully${reset}\n\n"
-printf "${green}[+] To start NetHunter, type:${reset}\n"
-printf "${green}[+] nethunter             # To start NetHunter cli${reset}\n"
-printf "${green}[+] nethunter kex passwd  # To set the KeX password${reset}\n"
-printf "${green}[+] nethunter kex &       # To start NetHunter gui${reset}\n"
-printf "${green}[+] nethunter kex stop    # To stop NetHunter gui${reset}\n"
-printf "${green}[+] nethunter -r          # To run NetHunter as root${reset}\n"
-printf "${green}[+] nh                    # Shortcut for nethunter${reset}\n\n"
+print_banner | lolcat
+printf "${green}[=] NetHunter for Termux installed successfully${reset}\n\n" | lolcat
+printf "${green}[+] To start NetHunter, type:${reset}\n" | lolcat
+printf "${green}[+] nethunter             # To start NetHunter cli${reset}\n" | lolcat
+printf "${green}[+] nethunter kex passwd  # To set the KeX password${reset}\n" | lolcat
+printf "${green}[+] nethunter kex &       # To start NetHunter gui${reset}\n" | lolcat
+printf "${green}[+] nethunter kex stop    # To stop NetHunter gui${reset}\n" | lolcat
+printf "${green}[+] nethunter -r          # To run NetHunter as root${reset}\n" | lolcat
+printf "${green}[+] nh                    # Shortcut for nethunter${reset}\n\n" | lolcat
