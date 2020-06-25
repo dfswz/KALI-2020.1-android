@@ -1,17 +1,6 @@
 termux-setup-storage
-pkg upgrade -y
-pkg update -y
-pip install lolcat
-pkg upgrade -y
-pkg update -y
-pkg install toilet -y
-pkg install figlet -y
-pkg install fish -y
-pkg install wget -y
-pkg upgrade -y | lolcat
-pkg update -y | lolcat
-echo
-echo
+bash package.sh
+python logo.py
 echo
 echo '$$$$$$$$\ $$$$$$$$\  $$$$$$\  $$\   $$\' | lolcat 
 echo '\__$$  __|$$  _____|$$  __$$\ $$ |  $$ |' | lolcat
@@ -22,66 +11,17 @@ echo '   $$ |   $$ |      $$ |  $$\ $$ |  $$ |' | lolcat
 echo '   $$ |   $$$$$$$$\ \$$$$$$  |$$ |  $$ |' | lolcat
 echo '   \__|   \________| \______/ \__|  \__|' | lolcat
 echo                                         
+echo '    $$$$$$$$\   $$$$$$$\     $$$$$$\' | lolcat           
+echo '    $$  _____|  $$  __$$\   $$  __$$\' | lolcat          
+echo '    $$ |        $$ |  $$ |  $$ /  \__|' | lolcat         
+echo '    $$$$$\      $$$$$$$  |  \$$$$$$\   ' | lolcat        
+echo '    $$  __|     $$  ____/    \____$$\   ' | lolcat       
+echo '    $$ |        $$ |        $$\   $$ |' | lolcat         
+echo '    $$ |        $$ |        \$$$$$$  |' | lolcat         
+echo '    \__|        \__|         \______/'  | lolcat          
 echo                                         
-echo                                         
-echo '$$$$$$$$\ $$$$$$$\   $$$$$$\' | lolcat           
-echo '$$  _____|$$  __$$\ $$  __$$\' | lolcat          
-echo '$$ |      $$ |  $$ |$$ /  \__|' | lolcat         
-echo '$$$$$\    $$$$$$$  |\$$$$$$\   ' | lolcat        
-echo '$$  __|   $$  ____/  \____$$\   ' | lolcat       
-echo '$$ |      $$ |      $$\   $$ |' | lolcat         
-echo '$$ |      $$ |      \$$$$$$  |' | lolcat         
-echo '\__|      \__|       \______/'  | lolcat          
-echo                                         
-echo                                         
-echo                                         
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWWWWWWWWWWWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWX0kxxxxxdxxxkO0KXNWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWMMMMMWNX0xoc:;,,''.'',;cdk0XNWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWMMMWMMMMWWNXOdl:;''.......,:okKNWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKOdc;''........':oOKWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWWWWNNNNNWNN0xl:;'..........,cxKNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMWWNXK0Okxddddoodddddo:;:;,...........'ckXWMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMWWNKOxdl:;,'............''',;,'............;oKNWMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMWWX0koc;,'..............................'......,lkNWMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMWN0xoc;'...................................''......cOXWMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMWN0xl:,'......................................''.....,lOWMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMWN0xl:,'........................................'''.....'oXWMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMWXOdc;'.................'''....,;::,'..............'......cOXWWWWWWWWWMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMNXkl:,'..',:;,'........'......,lkKXXOd:'...................;xO0Oxxxxxk0XWWMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMWWKxoc,'...';c;'.......'.......;xXNMMWWXOo,...........'......,ooc,.....;o0WMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMWXkl:;'....';c;........'......:xKWMMMMMWW0l,..........'......',,'......;dKWMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMXOdc;,....',::,..............'o0NMMMMMMMMXx:..........'.......'''......ckXWMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMWKxl;'.....':::,..............'o0NMMMMMMMMXd:'...............'''.......,oKNMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMWNOl;'.....';c::'........'......:dKWMMMMMWNOc,.................''......,cOWWMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMWNOc,.....,lllc:,................;d0NWMWWXkl,.........'''''...........'lOXWMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMWWKxdoooookKkol:,.................,:dOK0ko;'..........''......'......,lONWMMMMMMMMMMMMMMM'  | lolcat  
-echo 'MMMMMMMMMMMWWWWWNNWWWKkoc,..............'...',;:;,...........................;dKNMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMNKxc;'................................................,oOXWMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMWWOoc:,.............................................;oOXWMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMXOdc;'.........................................,cd0XWMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMWN0dl;'....................................';lx0XNWWWMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMNKxc:,'....''''''.........'''''''''',:cox0KNWWMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMWX0dc:,'..........'';oxkkkkkkkkkOO0KXNNWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMWWXOdc;,'...'......,oOXNWWWWWWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWX0xoc;,''''......,okKNWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWN0kdl:;,,''.....'cok0XNWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWNX0Oxoc::;;,''',;cdk0XWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWNNXK00OOOkkOOOO0KWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-echo 'MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'  | lolcat
-wget -o /sdcard/Download/com.offsec.nethunter.kex_11407306.apk https://store.nethunter.com/repo/com.offsec.nethunter.kex_11407306.apk
-
+wget -o /sdcard/Download/com.offsec.nethunter.kex_11407306.apk https://store.nethunter.com/repo/com.offsec.nethunter.kex_11407306.apk                                        
+fish
+clear
+bash client.sh
+rm -rf package.sh
